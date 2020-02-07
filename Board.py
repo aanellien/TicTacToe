@@ -63,7 +63,7 @@ class Board:
             print("It has been a draw between {} and {}".format(self.name1, self.name2))
 
     def isWin(self) -> bool:
-        return self.checkRows() or self.checkCols() or self.checkIncDia() or self.checkIncDia()
+        return self.checkRows() or self.checkCols() or self.checkIncDia() or self.checkDecDia()
 
     def checkRows(self) -> bool:
         for row in self.board:
@@ -87,8 +87,11 @@ class Board:
     def checkDecDia(self) -> bool:
         values: List[str] = []
         for i in range(self.board_size):
-            values.append(self.board[i, -i - 1])
+            values.append(self.board[i, -i-1])
         return self.generalCheck(values)
 
     def generalCheck(self, arr: Iterable[str]) -> bool:
         return self.default_symbol not in arr and len(set(arr)) == 1
+
+    def setBoard(self,board :Array[str,str]) -> None:
+        self.board=board

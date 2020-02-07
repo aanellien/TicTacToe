@@ -13,8 +13,7 @@ MSG_SYMBOL: str = "{}, please enter your symbol\n"
 MG_SYMBOL_CONf: str = "{} has been assigned {}"
 MG_SYMBOL_FORB: str = "{} is invalid symbol "
 
-MSG_MAKE_MOVE: str = "{} enter row number,column number seperated by comma"
-"where you want to place your piece\n"
+MSG_MAKE_MOVE: str = "{} enter row number,column number seperated by comma\n"
 
 MSG_OCCUPIED_SQUARE: str = "This square is already occupied, please try another square"
 MSG_INVALID_MOVE: str = "invalid move, please try again"

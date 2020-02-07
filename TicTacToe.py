@@ -1,5 +1,6 @@
 import Strings
-from .Board import Board
+from Board import Board
+
 
 class TicTacToe:
     def __init__(self, board_size: int = 3):
@@ -48,7 +49,8 @@ def playBasicTicTacToe() -> None:
 
 
 def playCustomTicTacToe(size: int) -> None:
-    playCustomTicTacToe(size)
+    tictactoe :TicTacToe = TicTacToe(size)
+    tictactoe.play()
 
 
 if __name__ == "__main__":
