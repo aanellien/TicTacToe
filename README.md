@@ -1,5 +1,5 @@
 # TicTacToe
-#### TicTacToe Open Source Project Template Instructions
+
 
 
 ## Installation
@@ -76,13 +76,15 @@ Board.py has the main logic
        g) Both players should have different names      
        
        
-       
-
+ 
+ 
+```
 board = Board( board_size: int = 3, symbol1: str = Strings.DEFAULT_SYMBOL1,
                  symbol2: str = Strings.DEFAULT_SYMBOL2,
                  default_symbol: str = Strings.DEFAULT_SYMBOL_EMPTY,
                  name1: str = Strings.DEFAULT_NAME1, name2: str = Strings.DEFAULT_NAME2) -> None:
                  raise Value Error if invalid arguments
+```
            
                  
 2)  Play using console output by 
