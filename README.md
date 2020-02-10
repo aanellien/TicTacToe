@@ -60,6 +60,7 @@ provide a non-console UI for this game.
 Board.py has the main logic
 
 1) Construct  Board class object by using the following constructor
+
        a) Board size should be an integer > 2
        
        b) symbol1,name1 belong to player 1
@@ -103,10 +104,16 @@ is not required.
      
 4) Get game status by calling getStatus()
     statuses are enum with name,values being
-        NOT_FINISHED = 1
-        PLAYER1_WIN = 2
-        PLAYER2_WIN = 3
-        DRAW = 4
+    ```
+    Board.py
+    
+    class GameStatus(Enum):
+    NOT_FINISHED = 1
+    PLAYER1_WIN = 2
+    PLAYER2_WIN = 3
+    DRAW = 4
+    
+   ```
   
 5)  board.makeMove(row: int,col: int)     
        Will try to make a move. The program autodetects whose turn it is and accordingly
@@ -152,7 +159,7 @@ do not forget to credit the author.
 1) The team which has sent me the project.
 
 
-  (a)I originally didnt plan on spending more than 1 hour as tic-tac-toe is too basic
+  (a)I originally didnt plan on spending more than 2 hour as tic-tac-toe is too basic
   
   (b) Which is true
   
@@ -163,6 +170,8 @@ do not forget to credit the author.
         (iii) Having Robust testing 
         (iv) Code simple to read,understand
         (v) Following good software engineering practises
+     
+     was a good experience.
         
   (d) Testing took me more time. I know basic architecture of testing 
   from unit tests,integration test,workflow testing, white,black boxes etc.
