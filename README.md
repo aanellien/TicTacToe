@@ -31,7 +31,7 @@ to focus on the game logic.
   - It has been fully
   implement using type hints for greater safety
   - It allows you to load a in-between game rather than start from beginning everytime.
-  - It exposes core logic of the game which can be used in your own 
+  - It exposes core logic of the game which can be used in your own project.
   - It has a lot of error checking logic to overcome most edge cases.
   - Has multiple randomized tests
 
@@ -40,9 +40,6 @@ to focus on the game logic.
 
 ## Dependencies
 
-
-
-## Installation
 
 requirement.txt having the python libraries required is present in the project folder.
 It uses numpy for the array utility to store the game state. 
@@ -64,12 +61,18 @@ Board.py has the main logic
 
 1) Construct  Board class object by using the following constructor
        a) Board size should be an integer > 2
+       
        b) symbol1,name1 belong to player 1
+       
        c) symbol2,name2 belong to player2
+       
        d) Default Symbol is the default cell symbol before any move is done
+       
        e) all symbols should be unique of each other
+       
        f) symbols are not allowed to have \n,\t,' ' and any other character
        which interferes in console printing of game board
+       
        g) Both players should have different names      
        
        
