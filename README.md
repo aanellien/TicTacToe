@@ -27,7 +27,6 @@ to focus on the game logic.
   
   - **Status**:  Beta - Next phase will cover unit tests for all functions as well 
   as integration test of some example games played. The unit tests will also verify  the message in value error 
-  - **Links to production or demo instances**
   - This project can support any N*N tictactoe game. 
   - It has been fully
   implement using type hints for greater safety
