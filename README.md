@@ -90,11 +90,15 @@ board.play() and following instructions. If you are not using console UI, this f
 is not required.
 
 3)You can save, load a game state.
+
      a)save  -> board.getBoard() -> will give you 2d numpy array 
                                     of current board state
+                                    
      b)load -> board.setBoard(board) where board is the stored 2d numpy
-     array. It will also update the game state. This raises value error when invalid value.     
+     array. It will also update the game state. This raises value error when invalid value.   
+       
      c)be sure to initiate all symbols to same values between games sessions
+     
 4) Get game status by calling getStatus()
     statuses are enum with name,values being
         NOT_FINISHED = 1
@@ -144,21 +148,30 @@ do not forget to credit the author.
 
 ## Credits 
 1) The team which has sent me the project.
+
+
   (a)I originally didnt plan on spending more than 1 hour as tic-tac-toe is too basic
+  
   (b) Which is true
+  
   (c) But making it robust handling 
+  
         (i) Edge cases
         (ii) Allowing other developers to reuse functionality in different project
         (iii) Having Robust testing 
         (iv) Code simple to read,understand
         (v) Following good software engineering practises
+        
   (d) Testing took me more time. I know basic architecture of testing 
   from unit tests,integration test,workflow testing, white,black boxes etc.
   Knew the basic logic , but have never implemented it on a project.
   
+  
   (e) After writing tests, felt the need to break 
   original code into much smaller modules breaking tight coupling between 
   data inputting and core logic,
+  
+  
 2) Team for being patient with me , family for supporting me when I am down last few days with chicken pox and fever due to that. Very unfortunate timing.
   
    
